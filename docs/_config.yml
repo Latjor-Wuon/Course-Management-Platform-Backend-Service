@@ -2,8 +2,8 @@
 
 title: "Student Reflection Portal"
 description: "Interactive student reflection page with internationalization support"
-baseurl: ""
-url: ""
+baseurl: "/Course-Management-Platform-Backend-Service"
+url: "https://github.com/Latjor-Wuon.github.io"
 
 # Build settings
 markdown: kramdown
