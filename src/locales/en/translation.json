@@ -1,0 +1,41 @@
+{
+  "auth": {
+    "login_success": "Login successful",
+    "login_failed": "Invalid credentials",
+    "logout_success": "Logout successful",
+    "token_expired": "Token has expired",
+    "unauthorized": "Unauthorized access",
+    "forbidden": "Access forbidden"
+  },
+  "course": {
+    "created": "Course created successfully",
+    "updated": "Course updated successfully",
+    "deleted": "Course deleted successfully",
+    "not_found": "Course not found",
+    "already_assigned": "Course already assigned to facilitator"
+  },
+  "activity": {
+    "logged": "Activity logged successfully",
+    "updated": "Activity updated successfully",
+    "not_found": "Activity not found",
+    "deadline_reminder": "Reminder: Activity log deadline approaching",
+    "late_submission": "Late submission alert"
+  },
+  "user": {
+    "created": "User created successfully",
+    "updated": "User updated successfully",
+    "not_found": "User not found",
+    "email_exists": "Email already exists"
+  },
+  "validation": {
+    "required_field": "This field is required",
+    "invalid_email": "Invalid email format",
+    "password_too_short": "Password must be at least 8 characters",
+    "invalid_role": "Invalid user role"
+  },
+  "general": {
+    "server_error": "Internal server error",
+    "not_found": "Resource not found",
+    "success": "Operation successful"
+  }
+}

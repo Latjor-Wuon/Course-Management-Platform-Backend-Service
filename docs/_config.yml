@@ -1,0 +1,21 @@
+# GitHub Pages Configuration for Student Reflection Portal
+
+title: "Student Reflection Portal"
+description: "Interactive student reflection page with internationalization support"
+baseurl: ""
+url: ""
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Exclude files
+exclude:
+  - README.md
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
+
+# Include files
+include:
+  - _pages

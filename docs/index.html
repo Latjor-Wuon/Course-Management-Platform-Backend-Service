@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Reflection Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="logo" data-i18n="header.title">Student Reflection Portal</h1>
+                <div class="language-switcher">
+                    <button class="lang-btn active" data-lang="en">English</button>
+                    <button class="lang-btn" data-lang="fr">Français</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Greeting Section -->
+            <section class="greeting-section">
+                <div class="greeting-card">
+                    <h2 data-i18n="greeting.welcome">Welcome to Your Reflection Space</h2>
+                    <p data-i18n="greeting.message">
+                        Take a moment to reflect on your learning journey. Your thoughts and insights are valuable 
+                        for your personal growth and academic development.
+                    </p>
+                    <div class="greeting-meta">
+                        <span data-i18n="greeting.today">Today:</span>
+                        <span id="current-date"></span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Reflection Form -->
+            <section class="reflection-section">
+                <div class="reflection-card">
+                    <h3 data-i18n="reflection.title">Weekly Reflection Questions</h3>
+                    <form id="reflection-form" class="reflection-form">
+                        <!-- Question 1 -->
+                        <div class="form-group">
+                            <label for="question1" data-i18n="reflection.question1.label">
+                                What are the most significant things you learned this week?
+                            </label>
+                            <textarea 
+                                id="question1" 
+                                name="question1" 
+                                rows="4" 
+                                data-i18n-placeholder="reflection.question1.placeholder"
+                                placeholder="Describe your key learnings, concepts, skills, or insights...">
+                            </textarea>
+                        </div>
+
+                        <!-- Question 2 -->
+                        <div class="form-group">
+                            <label for="question2" data-i18n="reflection.question2.label">
+                                What challenges did you face and how did you overcome them?
+                            </label>
+                            <textarea 
+                                id="question2" 
+                                name="question2" 
+                                rows="4" 
+                                data-i18n-placeholder="reflection.question2.placeholder"
+                                placeholder="Share any difficulties you encountered and your problem-solving strategies...">
+                            </textarea>
+                        </div>
+
+                        <!-- Question 3 -->
+                        <div class="form-group">
+                            <label for="question3" data-i18n="reflection.question3.label">
+                                How will you apply what you've learned to your future studies or career?
+                            </label>
+                            <textarea 
+                                id="question3" 
+                                name="question3" 
+                                rows="4" 
+                                data-i18n-placeholder="reflection.question3.placeholder"
+                                placeholder="Connect your learning to real-world applications and future goals...">
+                            </textarea>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="form-actions">
+                            <button type="button" id="save-draft" class="btn btn-secondary" data-i18n="reflection.save_draft">
+                                Save Draft
+                            </button>
+                            <button type="submit" class="btn btn-primary" data-i18n="reflection.submit">
+                                Submit Reflection
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Progress Section -->
+            <section class="progress-section">
+                <div class="progress-card">
+                    <h3 data-i18n="progress.title">Your Reflection Journey</h3>
+                    <div class="progress-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" id="total-reflections">0</span>
+                            <span class="stat-label" data-i18n="progress.total_reflections">Total Reflections</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" id="this-month">0</span>
+                            <span class="stat-label" data-i18n="progress.this_month">This Month</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" id="streak">0</span>
+                            <span class="stat-label" data-i18n="progress.weekly_streak">Weekly Streak</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p data-i18n="footer.copyright">
+                © 2025 Course Management Platform. All rights reserved.
+            </p>
+            <p data-i18n="footer.support">
+                Need help? Contact your academic advisor or technical support.
+            </p>
+        </footer>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="modal">
+        <div class="modal-content">
+            <h3 data-i18n="modal.success.title">Reflection Submitted Successfully!</h3>
+            <p data-i18n="modal.success.message">
+                Thank you for taking the time to reflect on your learning. Your insights are valuable for your growth.
+            </p>
+            <button id="close-modal" class="btn btn-primary" data-i18n="modal.close">Close</button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
